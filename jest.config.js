@@ -13,4 +13,8 @@ module.exports = {
       // ts-jest configuration goes here
     },
   },
+  moduleNameMapper: {
+    '^@App/(.*)$': '<rootDir>/src/$1',
+    '^lib/(.*)$': '<rootDir>/common/$1',
+  },
 }
