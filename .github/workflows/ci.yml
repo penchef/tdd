@@ -17,11 +17,11 @@ jobs:
           registry-url: "https://registry.npmjs.org"
       - name: Install node-modules
         run: |
-          npm install
+          yarn install
       - name: Lint
         id: lint
         run: yarn lint
       - name: test
         id: test
-        run: npm test
+        run: yarn test
       
